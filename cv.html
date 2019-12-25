@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style type="text/css">
+        body {
+            margin: 50px;
+        }
+
+        .nav_hover:hover {
+            cursor: pointer;
+        }
+
+
+        .wrapper {
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .bg-primary-custom {
+            background: #22313F;
+            color: #fff;
+        }
+
+        .bg-secondary-custom {
+            background: #f8f8f8;
+            color: #000;
+        }
+
+        .text-custom {
+            color: #22313F;
+        }
+
+        #avatar {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        #authorize {
+            font-size: 10px;
+            position: fixed;
+            bottom: 0;
+            right: 3px;
+        }
+
+        .leftside {
+            float: left;
+            width: 40%;
+        }
+
+        .rightside {
+            float: right;
+            width: 60%;
+        }
+
+        @media (max-width:800px) {
+
+            .leftside,
+            .rightside {
+                width: 100%;
+                /*The width is 100%, when the viewport is 800px or smaller*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container-fluid d-flex align-items-stretch flex-wrap">
+        <div class="p-4 bg-primary-custom leftside">
+            <div>
+                <div id="avatarContainer">
+                    <img id="avatar" class="mt-3 pt-5 pr-5 pl-5 pb-3" src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/s960x960/52592602_1243745049112285_72379042275262464_o.jpg?_nc_cat=107&_nc_ohc=BoO_MNvK03kAQm6s8lD_KYXh2YB4JoBIixFtbTWtzNjwe7wMRb5S6iYvw&_nc_ht=scontent.fhan5-6.fna&oh=4e89a2f464781d43cfd76e55b18f69ec&oe=5EA9A94B">
+                </div>
+                <h2 class="text-center">HA QUOC VIET</h2>
+                <hr>
+            </div>
+
+            <div class="p-4">
+                <h5 class="text-left">About me</h5>
+                <div>
+                    <p>Looking for a proactive enviroment to challenge and push myself forward.</p>
+                </div>
+                <hr>
+                <h5 class="text-left">Contact me</h5>
+                <div>
+                    <i class="el-icon-message"></i>
+                    Email: hqv1211@gmail.com
+                    <br>
+                    <i class="el-icon-phone"></i>
+                    Phone: 0946305096
+                </div>
+            </div>
+        </div>
+        <div class="p-5 bg-secondary-custom rightside">
+            <div>
+                <h3 class="text-custom text-uppercase">
+                    <i class="el-icon-school"></i>
+                    Education</h3>
+                <p class="ml-3">2014 - 2018: Posts and Telecommunications Institute of Technology</p>
+            </div>
+            <hr>
+            <div>
+                <h3 class="text-custom text-uppercase">
+                    <i class="el-icon-medal"></i>
+                    Skills</h3>
+                <div class="row mt-4">
+                    <div class="col-6 mb-5 text-center">
+                        <el-progress type="dashboard" color="#22313F" :show-text="false" :percentage="70">
+                        </el-progress>
+                        <div>Javascript(Jquery, Vuejs, Angular)</div>
+                    </div>
+                    <div class="col-6 mb-5 text-center">
+                        <el-progress type="dashboard" color="#22313F" :show-text="false" :percentage="80">
+                        </el-progress>
+                        <div>PHP (Laravel)</div>
+                    </div>
+                    <div class="col-6 mb-5 text-center">
+                        <el-progress type="dashboard" color="#22313F" :show-text="false" :percentage="50">
+                        </el-progress>
+                        <div>Ionic</div>
+                    </div>
+                    <div class="col-6 mb-5 text-center">
+                        <el-progress type="dashboard" color="#22313F" :show-text="false" :percentage="60">
+                        </el-progress>
+                        <div>Flutter</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3 class=" text-custom text-uppercase">
+                    <i class="el-icon-guide"></i>
+                    Experience</h3>
+                <el-timeline>
+                    <el-timeline-item v-for="(item, index) in experiences" :key="index" :timestamp="item.timestamp"
+                        placement="top">
+                        <h5>{{ item.title }}</h5>
+                        <div v-html="item.description"></div>
+                    </el-timeline-item>
+                </el-timeline>
+            </div>
+            <hr>
+            <div>
+                <h3 class=" text-custom text-uppercase">
+                    <i class="el-icon-box"></i>
+                    Self projects</h3>
+                    <a href="https://github.com/hqviet" target="_blank">https://github.com/hqviet</a>
+            </div>
+        </div>
+    </div>
+    <div id="authorize">Made by <a href="https://www.facebook.com/viethq121" target="_blank">Quoc Viet</a></div>
+</body>
+<script>
+    var cv = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                experiences: [
+                    {
+                        title: 'Fresher at CO-WELL ASIA Co., LTD',
+                        timestamp: '2018/12/17',
+                        description: `
+                        <ul>
+                            <li>Maintained Internal Softwares</li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: 'Junior at TSPACE LTD',
+                        timestamp: '2019/5/10',
+                        description: `
+                        <ul>
+                            <li>Developed <a href="https://viego.tspacevn.com" target="_blank">Viego</a></li>
+                            <li>Developed <a href="https://www.tuanvu.vn/" target="_blank">TuanVu Sports</a></li>
+                            <li>Maintained <a href="https://stake.com.au/" target="_blank">Stake</a></li>
+                            <li>Developed <a href="javascript:void(0)" target="_blank">Noli</a></li>
+                        </ul>
+                        `
+                    },
+                    {
+                        title: '',
+                        timestamp: 'now',
+                        description: ``
+                    }
+                ]
+            }
+        },
+
+    })
+</script>
+
+</html>
